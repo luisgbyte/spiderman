@@ -1,5 +1,5 @@
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 
     padding: 36px 16px;
@@ -39,7 +39,7 @@ w-auto {
 }
 
 .spiderman {
-    width: 115%;
+    width: 100%;
     transform: translate3d(-170px, 0, 0);
 
     @include responsive() {
@@ -176,4 +176,22 @@ w-auto {
 
         background: linear-gradient(101.47deg, #0A0C10 26.38%, rgba(10, 12, 16, 0.8) 50.07%, #0A0C10 73.17%);
     }
+}
+
+.bg-loader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: linear-gradient(255deg, $red 0%, $red-dark 100%);
 }
